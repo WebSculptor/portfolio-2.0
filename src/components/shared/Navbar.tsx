@@ -22,7 +22,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full h-20 py-2 md:py-4 border-b sticky top-0 inset-x-0 bg-background/50 backdrop-blur-md z-20">
+    <header className="w-full h-20 py-2 md:py-4 border-b sticky top-0 inset-x-0 bg-background/80 backdrop-blur-md z-20">
       <MaxWidthContainer className="flex items-center justify-between w-full h-full md:h-11">
         <Link href="/" className="pointer text-lg font-bold">
           WebSculptor

@@ -3,22 +3,22 @@ import demoImg from "../../../public/reference.png";
 
 export default function AboutDetails({ title, description }: AboutProps) {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center gap-10 py-10 md:py-20 lg:even:flex-row-reverse">
-      <div className="relative h-80 w-full md:h-[468px] md:w-[517px] bg-secondary/80 dark:bg-secondary/30 rounded-lg">
-        <div className="w-full h-full overflow-hidden rounded-lg">
+    <div className="flex flex-col lg:flex-row justify-between items-center gap-10 first:pt-0 pt-10 md:pt-20 lg:even:flex-row-reverse">
+      <div className="relative w-full [1.3] md:w-[517px] bg-secondary/80 dark:bg-secondary/30 rounded-lg">
+        <div className="w-full aspect-[1.3] overflow-hidden rounded-lg">
           <Image
             src={demoImg}
             alt="image"
             priority
-            className="object-cover w-full h-full"
+            className="object-cover w-full aspect-[1.3]"
           />
         </div>
-        <div className="absolute -bottom-7 -left-7 hidden md:block h-[260px] w-[300px] bg-secondary/80 dark:bg-secondary/30 rounded-lg overflow-hidden shadow border-8 border-background">
+        <div className="absolute -bottom-7 -left-7 hidden md:block aspect-[1.3] w-[300px] bg-secondary/80 dark:bg-secondary/30 rounded-lg overflow-hidden shadow border-8 border-background">
           <Image
             src={demoImg}
             alt="image"
             priority
-            className="object-cover w-full h-full rounded-lg"
+            className="object-cover w-full aspect-[1.3] rounded-lg"
           />
         </div>
       </div>

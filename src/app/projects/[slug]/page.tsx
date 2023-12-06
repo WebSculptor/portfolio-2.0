@@ -10,6 +10,8 @@ import Filter from "@/components/shared/Filter";
 import Overview from "@/components/shared/Overview";
 import MasonryCard from "@/components/cards/MasonryCard";
 import Changelog from "@/components/shared/Changelog";
+import ProjectCard from "@/components/cards/ProjectCard";
+import Heading from "@/components/shared/Heading";
 
 const images = [
   "https://source.unsplash.com/bYuI23mnmDQ",
@@ -46,6 +48,7 @@ const filters = [
 
 export default function ProjectDetailsPage() {
   const [activeTab, setActiveTab] = useState<string>("overview");
+  const underConstruction = true;
 
   const handleButtonClick = (tab: string) => {
     setActiveTab(tab);
@@ -63,7 +66,7 @@ export default function ProjectDetailsPage() {
         </p>
 
         <div className="flex items-start flex-col gap-6 mt-10 lg:flex-row">
-          <div className="flex-1 rounded-lg bg-secondary/80 dark:bg-secondary/20 aspect-[1.3] overflow-hidden">
+          <div className="flex-1 rounded-lg bg-secondary/80 dark:bg-secondary/20 aspect-[1.4] overflow-hidden">
             <Image
               src={demoImg}
               alt="image"
@@ -101,6 +104,21 @@ export default function ProjectDetailsPage() {
             ) : (
               activeTab === "changelog" && <Changelog />
             )}
+          </div>
+        </MaxWidthContainer>
+      </div>
+
+      <div className="w-full pt-10 md:pt-20">
+        <MaxWidthContainer className="flex flex-col gap-14">
+          <Heading
+            title="Under Construction"
+            subtitle="Projects I'm currently working on"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Array.from({ length: 3 }).map((_, _key) => (
+              <ProjectCard key={_key} underConstruction={underConstruction} />
+            ))}
           </div>
         </MaxWidthContainer>
       </div>

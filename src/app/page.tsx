@@ -29,13 +29,15 @@ export default function Home() {
           </div>
 
           <h1 className="w-full max-w-[840px] text-3xl md:text-5xl lg:text-6xl font-black lg:leading-[68px]">
-            Empower Your Business: Create and Sell with Framer!
+            Are you looking for a highly skilled ReactJs developer?
+            <br />
+            Look no further.
           </h1>
 
           <p className="text-sm md:text-base leading-7 md:leading-8 max-w-2xl my-4 mb-6">
-            With years of experience in web development, I specialize in
-            creating custom web applications that help businesses achieve their
-            goals by adapting innovative solutions.
+            Performance optimization in React is crucial for creating engaging
+            interfaces that enhance usability and functionality, ensuring
+            high-quality code delivery.
           </p>
 
           <Link
@@ -79,7 +81,9 @@ export default function Home() {
             ))}
           </div>
 
-          {aboutContent.slice(0, 1) && <AboutDetails {...aboutContent[0]} />}
+          <div className="py-10 md:py-20">
+            {aboutContent.slice(0, 1) && <AboutDetails {...aboutContent[0]} />}
+          </div>
         </MaxWidthContainer>
       </div>
 
@@ -93,7 +97,12 @@ export default function Home() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.slice(0, 3).map((project, _key) => (
-              <ProjectCard key={_key} {...project} showButtons={true} />
+              <ProjectCard
+                key={_key}
+                {...project}
+                showButtons={true}
+                underConstruction={false}
+              />
             ))}
           </div>
         </MaxWidthContainer>

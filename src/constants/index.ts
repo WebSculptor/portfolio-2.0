@@ -126,23 +126,7 @@ export const projects: ProjectsProps[] = [
     shortDescription:
       "Sleek and sophisticated font that embodies creativity and innovation.",
     url: "http://localhost:3000/projects",
-    underConstruction: false,
-  },
-  {
-    image: demoImg,
-    name: "Project Name",
-    shortDescription:
-      "Sleek and sophisticated font that embodies creativity and innovation.",
-    url: "http://localhost:3000/projects",
-    underConstruction: false,
-  },
-  {
-    image: demoImg,
-    name: "Project Name",
-    shortDescription:
-      "Sleek and sophisticated font that embodies creativity and innovation.",
-    url: "http://localhost:3000/projects",
-    underConstruction: false,
+    underConstruction: true,
   },
   {
     image: demoImg,
@@ -159,14 +143,6 @@ export const projects: ProjectsProps[] = [
       "Sleek and sophisticated font that embodies creativity and innovation.",
     url: "http://localhost:3000/projects",
     underConstruction: false,
-  },
-  {
-    image: demoImg,
-    name: "Project Name",
-    shortDescription:
-      "Sleek and sophisticated font that embodies creativity and innovation.",
-    url: "http://localhost:3000/projects",
-    underConstruction: true,
   },
   {
     image: demoImg,
