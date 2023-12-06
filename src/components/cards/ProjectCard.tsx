@@ -14,7 +14,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="rounded-2xl border bg-background group w-full md:w-[352.664px]">
-      <div className="w-full h-64 bg-secondary/20 rounded-t-2xl overflow-hidden">
+      <div className="w-full h-64 bg-secondary/80 dark:bg-secondary/20 rounded-t-2xl overflow-hidden">
         <Image
           src={demoImg}
           alt="image"

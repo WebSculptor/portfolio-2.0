@@ -16,7 +16,7 @@ export default function Filter({
   return (
     <Button
       className="py-5 w-full sm:w-max"
-      variant={activeTab === value ? "default" : "secondary"}
+      variant={activeTab === value ? "default" : "outline"}
       onClick={() => handleButtonClick(value)}
     >
       {children}

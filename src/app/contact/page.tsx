@@ -36,7 +36,7 @@ export default function ContactPage() {
                   key={data.path}
                   className="flex items-center gap-3 pointer"
                 >
-                  <div className="bg-secondary h-12 w-12 rounded-lg flex items-center justify-center">
+                  <div className="bg-secondary/80 h-12 w-12 rounded-lg flex items-center justify-center">
                     <span dangerouslySetInnerHTML={{ __html: data.icon }} />
                   </div>
                   <div>

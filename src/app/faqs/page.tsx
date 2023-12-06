@@ -33,7 +33,7 @@ export default function FAQSPage() {
 
         <div className="border rounded-lg p-5 mt-14 flex items-center justify-between flex-wrap gap-5">
           <div className="flex items-center gap-4">
-            <div className="bg-secondary rounded-lg h-12 w-12 flex items-center justify-center">
+            <div className="bg-secondary/80 rounded-lg h-12 w-12 flex items-center justify-center">
               <MessageSquare className="w-6 h-6" />
             </div>
 

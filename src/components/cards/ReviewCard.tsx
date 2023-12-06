@@ -39,7 +39,7 @@ export default function ReviewCard({
         <p className="text-base md:text-md text-foreground">{review}</p>
       </div>
 
-      <div className="relative py-4 px-4 md:px-6 border-t bg-secondary/20 h-24 overflow-hidden rounded-b-2xl">
+      <div className="relative py-4 px-4 md:px-6 border-t bg-secondary/80 dark:bg-secondary/20 h-24 overflow-hidden rounded-b-2xl">
         <div className="flex flex-col">
           <h1 className="text-md text-foreground font-semibold">{name}</h1>
           <p className="text-xs text-accent-foreground -mt-0.5 mb-2">
@@ -50,7 +50,7 @@ export default function ReviewCard({
           </div>
         </div>
         <div className="absolute -bottom-6 -right-5 w-24 h-24 rounded-full border border-dashed border-primary/20 flex items-center justify-center p-1">
-          <div className="w-full h-full rounded-full bg-secondary overflow-hidden">
+          <div className="w-full h-full rounded-full bg-secondary/80 overflow-hidden">
             <Image
               src={imgUrl}
               alt={name}

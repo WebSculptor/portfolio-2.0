@@ -11,7 +11,7 @@ export default function Hero({ title, description }: HeroTypes) {
   const currentPath = removeLeadingSlash(pathname);
 
   return (
-    <div className="w-full py-10 md:py-20 bg-secondary/20 border-b">
+    <div className="w-full py-10 md:py-20 bg-secondary/80 dark:bg-secondary/20 border-b">
       <MaxWidthContainer className="space-y-4">
         <div className="flex items-center gap-x-3">
           <Link

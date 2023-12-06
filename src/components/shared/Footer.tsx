@@ -18,7 +18,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-10 md:mt-20 border-t w-full bg-secondary/20">
+    <footer className="mt-10 md:mt-20 border-t w-full bg-secondary/80 dark:bg-secondary/20">
       <MaxWidthContainer className="py-10 flex items-center justify-center md:justify-between text-center md:text-start gap-4 flex-wrap">
         <p className="text-[15px] text-muted-foreground">
           <span>
@@ -61,7 +61,7 @@ export default function Footer() {
             <Link
               href={link.path}
               key={_key}
-              className="w-10 h-10 rounded-lg group bg-secondary/50 hover:bg-secondary transition duration-200 pointer flex items-center justify-center"
+              className="w-10 h-10 rounded-lg group bg-secondary/80 dark:bg-secondary/50 hover:bg-secondary/80 transition duration-200 pointer flex items-center justify-center"
               title={link.title}
             >
               <link.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition duration-200" />

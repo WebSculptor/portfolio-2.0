@@ -14,7 +14,7 @@ export default function AboutPage() {
             creating custom web applications that help businesses achieve their
             goals by adapting innovative solutions."
       />
-      <MaxWidthContainer className="py-10 md:py-20">
+      <MaxWidthContainer className="pt-10 md:pt-20">
         {aboutContent.map((content, _key) => (
           <AboutDetails key={_key} {...content} />
         ))}

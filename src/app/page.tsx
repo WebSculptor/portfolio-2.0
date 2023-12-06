@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="relative h-[600px] md:h-[658px] bg-secondary/10 border-b overflow-hidden">
+      <div className="relative h-[600px] md:h-[658px] bg-secondary/80 dark:bg-secondary/10 border-b overflow-hidden">
         <Image
           src={bannerImg}
           alt="banner"
@@ -25,7 +25,7 @@ export default function Home() {
 
         <MaxWidthContainer className="h-full flex flex-col items-center justify-center relative text-center">
           <div className="w-full h-[1089px] rounded-full bg-background blur-md absolute top-1/2 -translate-y-1/2 inset-0 -z-10">
-            <div className="w-full h-full rounded-full bg-secondary/40"></div>
+            <div className="w-full h-full rounded-full bg-secondary/80 dark:bg-secondary/40"></div>
           </div>
 
           <h1 className="w-full max-w-[840px] text-3xl md:text-5xl lg:text-6xl font-black lg:leading-[68px]">
@@ -64,7 +64,7 @@ export default function Home() {
         </MaxWidthContainer>
       </div>
 
-      <div className="w-full py-20">
+      <div className="w-full pt-10 md:pt-20">
         <MaxWidthContainer className="flex flex-col gap-14">
           <Heading
             title="Under Construction"
@@ -83,7 +83,7 @@ export default function Home() {
         </MaxWidthContainer>
       </div>
 
-      <div className="w-full py-20">
+      <div className="w-full pt-10 md:pt-20">
         <MaxWidthContainer className="flex flex-col gap-14">
           <Heading
             title="Some of my projects"
@@ -99,7 +99,7 @@ export default function Home() {
         </MaxWidthContainer>
       </div>
 
-      <div className="w-full py-20">
+      <div className="w-full pt-10 md:pt-20">
         <MaxWidthContainer className="flex flex-col gap-14">
           <Heading
             title="Testimonials"

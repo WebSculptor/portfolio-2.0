@@ -13,8 +13,8 @@ const listItems = [
 
 export default function HighlightsCard() {
   return (
-    <div className="bg-secondary/40 max-w-sm w-full rounded-lg p-5">
-      <h2 className="text-lg">Highlights:</h2>
+    <div className="bg-secondary/80 dark:bg-secondary/40 max-w-sm w-full rounded-lg p-5">
+      <h2 className="text-lg font-semibold">Highlights:</h2>
       <ul className="list-item space-y-2 pb-4 my-4 border-b">
         {listItems.map((item) => (
           <li className="text-muted-foreground text-[15px]" key={item}>

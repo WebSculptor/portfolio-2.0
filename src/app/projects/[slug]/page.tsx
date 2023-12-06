@@ -54,16 +54,16 @@ export default function ProjectDetailsPage() {
   return (
     <div className="w-full">
       <MaxWidthContainer className="py-10 md:py-20">
-        <h1 className="w-full max-w-[840px] text-3xl md:text-4xl lg:text-5zxl font-bold">
+        <h1 className="w-full lg:max-w-xl text-2xl md:text-3xl lg:text-4xl font-black lg:leading-[45px]">
           GADA Studios
         </h1>
-        <p className="max-w-3xl mt-2 text-base">
+        <p className="flex-1 text-sm leading-6 md:text-[15px] md:leading-7 text-muted-foreground">
           GADA Studios is a brand and product design agency focused on building
           brands that work.
         </p>
 
         <div className="flex items-start flex-col gap-6 mt-10 lg:flex-row">
-          <div className="flex-1 rounded-lg bg-secondary/20 aspect-[1.3] overflow-hidden">
+          <div className="flex-1 rounded-lg bg-secondary/80 dark:bg-secondary/20 aspect-[1.3] overflow-hidden">
             <Image
               src={demoImg}
               alt="image"
@@ -75,7 +75,7 @@ export default function ProjectDetailsPage() {
         </div>
       </MaxWidthContainer>
 
-      <div className="w-full bg-secondary/20 border-y">
+      <div className="w-full bg-secondary/80 dark:bg-secondary/20 border-y">
         <MaxWidthContainer className="py-10 md:py-20">
           <div className="flex items-center gap-4 flex-col sm:flex-row pb-6 border-b">
             {filters.map((filter) => {
