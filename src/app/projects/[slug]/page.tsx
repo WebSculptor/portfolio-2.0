@@ -3,7 +3,7 @@
 import HighlightsCard from "@/components/cards/HighlightsCard";
 import MaxWidthContainer from "@/components/shared/MaxWidthContainer";
 
-import demoImg from "../../../../public/reference.webp";
+import demoImg from "../../../../public/reference.png";
 import Image from "next/image";
 import { useState } from "react";
 import Filter from "@/components/shared/Filter";
@@ -55,12 +55,11 @@ export default function ProjectDetailsPage() {
     <div className="w-full">
       <MaxWidthContainer className="py-10 md:py-20">
         <h1 className="w-full max-w-[840px] text-3xl md:text-4xl lg:text-5zxl font-bold">
-          Project Name
+          GADA Studios
         </h1>
         <p className="max-w-3xl mt-2 text-base">
-          With years of experience in web development, I specialize in creating
-          custom web applications that help businesses achieve their goals by
-          adapting innovative solutions.
+          GADA Studios is a brand and product design agency focused on building
+          brands that work.
         </p>
 
         <div className="flex items-start flex-col gap-6 mt-10 lg:flex-row">

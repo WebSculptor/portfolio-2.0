@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import demoImg from "../../../public/demo.avif";
+import demoImg from "../../../public/reference.png";
 
 export default function ProjectCard({
   underConstruction,
@@ -23,9 +23,10 @@ export default function ProjectCard({
         />
       </div>
       <div className="px-5 pt-3 py-6">
-        <h2 className="text-xl font-bold">Project Name</h2>
+        <h2 className="text-xl font-bold">GADA Studios</h2>
         <p className="text-sm line-clamp-2 mt-2 opacity-60 group-hover:opacity-100 transition-opacity duration-200">
-          Sleek and sophisticated font that embodies creativity and innovation.
+          GADA Studios is a brand and product design agency focused on building
+          brands that work.
         </p>
 
         {showButtons && (

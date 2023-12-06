@@ -1,6 +1,6 @@
 import { Facebook, Heart, Instagram, Linkedin, Twitter } from "lucide-react";
 
-import demoImg from "../../public/demo.avif";
+import demoImg from "../../public/reference.png";
 
 export const nav_links: NavLinks[] = [
   {
@@ -34,7 +34,7 @@ export const reviews: ReviewProps[] = [
       "Working alongside him is always pleasant. He completes the task quickly and goes above and beyond what is required. He obviously knows a lot about the work he does, as well. I'm excited for our upcoming project together.",
     name: "Jethro Jonathan",
     createdAt: "February 8th, 2023",
-    imgUrl: "/demo.avif",
+    imgUrl: "/reference.png",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ export const reviews: ReviewProps[] = [
       "Abdullahi is an exceptional student who is eager to learn. He is a hard worker who is always looking to learn new skills. His leadership talents are maturing, and he is on the right track. I feel he is the best candidate for your position.",
     name: "Oluwafemi Korede",
     createdAt: "July 26th, 2023",
-    imgUrl: "/demo.avif",
+    imgUrl: "/reference.png",
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const reviews: ReviewProps[] = [
       "Salihu comes highly recommended for opportunities in web frontend development. His knowledge of ReactJs and Next.js, together with his expertise and devotion, make him a tremendous asset to any company.",
     name: "Ajibade Awojide",
     createdAt: "July 26th, 2023",
-    imgUrl: "/demo.avif",
+    imgUrl: "/reference.png",
   },
 ];
 

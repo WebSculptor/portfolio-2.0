@@ -1,5 +1,5 @@
 import Image from "next/image";
-import demoImg from "../../../public/demo.avif";
+import demoImg from "../../../public/reference.png";
 
 export default function AboutDetails({ title, description }: AboutProps) {
   return (
