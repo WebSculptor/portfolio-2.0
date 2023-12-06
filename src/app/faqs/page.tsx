@@ -40,7 +40,7 @@ export default function FAQSPage() {
             <div>
               <h2 className="text-lg font-medium">Still Need Help?</h2>
               <p className="text-sm text-muted-foreground">
-                Can’t find the answer here? Message us for help!
+                Can&apos;t find the answer here? Message us for help!
               </p>
             </div>
           </div>

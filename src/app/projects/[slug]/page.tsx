@@ -8,7 +8,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Filter from "@/components/shared/Filter";
 import Overview from "@/components/shared/Overview";
-import Masonry from "@/components/shared/Masonry";
+import MasonryCard from "@/components/cards/MasonryCard";
 import Changelog from "@/components/shared/Changelog";
 
 const images = [
@@ -98,7 +98,7 @@ export default function ProjectDetailsPage() {
             {activeTab === "overview" ? (
               <Overview />
             ) : activeTab === "screenshots" ? (
-              <Masonry images={images} />
+              <MasonryCard images={images} />
             ) : (
               activeTab === "changelog" && <Changelog />
             )}

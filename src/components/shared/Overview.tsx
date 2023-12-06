@@ -13,7 +13,7 @@ export default function Overview() {
       </p>
       <p className="text-muted-foreground leading-8 max-w-3xl text-[15px]">
         Another great feature of WebSculptor is its responsive design. With more
-        people accessing websites on mobile devices than ever before, it’s
+        people accessing websites on mobile devices than ever before, it&apos;s
         essential to have a portfolio that looks great on all screen sizes.
       </p>
     </div>

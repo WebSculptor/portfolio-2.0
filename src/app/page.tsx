@@ -105,7 +105,7 @@ export default function Home() {
             title="Testimonials"
             subtitle="Customer Testimonials"
             path="/wall-of-love"
-            description="Discover why our customers love our products by browsing their reviews below. We’re committed to providing high-quality materials."
+            description="Discover why our customers love our products by browsing their reviews below. We're committed to providing high-quality materials."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -24,8 +24,8 @@ export default function ContactPage() {
               <h1 className="text-xl md:text-2xl font-black">Get in Touch!</h1>
 
               <p className="text-[15px] max-w-xl text-muted-foreground">
-                Need Any Help? Send us a message using the form below and we'll
-                get back to you promptly!
+                Need Any Help? Send us a message using the form below and
+                we&apos;ll get back to you promptly!
               </p>
             </div>
 
