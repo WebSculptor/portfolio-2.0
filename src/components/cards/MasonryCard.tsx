@@ -10,7 +10,7 @@ export default function MasonryCard({ images }: { images: string[] }) {
           key={image}
           src={image}
           alt="image"
-          className="object-contain"
+          className="object-contain w-full"
         />
       ))}
     </div>
