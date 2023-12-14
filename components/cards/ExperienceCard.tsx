@@ -16,7 +16,7 @@ export default function ExperienceCard() {
               <p className="font-semibold">Product Designer at Google</p>
               <p className="text-muted-foreground text-sm">
                 Tasked with envisioning and crafting innovative user interfaces
-                and interactions for the company's cutting-edge products.
+                and interactions for the company&apos;s cutting-edge products.
               </p>
             </div>
           </div>

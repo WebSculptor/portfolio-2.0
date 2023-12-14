@@ -21,14 +21,14 @@ export default function AboutCard() {
           exhilarating adventure. I specialize in crafting user-centered
           experiences that not only look great but function flawlessly. I
           believe in the power of collaboration and constant learning. I thrive
-          in multidisciplinary teams design methodologies. When I'm not immersed
-          in pixels and prototypes, you can find me in the great outdoors,
-          seeking inspiration from nature and the world around me. design
-          methodologies. When I'm not immersed in pixels and prototypes, you can
-          find me in the great outdoors, seeking inspiration from nature and the
-          world around me.design methodologies. When I'm not immersed in pixels
-          and prototypes, you can find me in the great outdoors, seeking
-          inspiration.
+          in multidisciplinary teams design methodologies. When I&apos;m not
+          immersed in pixels and prototypes, you can find me in the great
+          outdoors, seeking inspiration from nature and the world around me.
+          design methodologies. When I&apos;m not immersed in pixels and
+          prototypes, you can find me in the great outdoors, seeking inspiration
+          from nature and the world around me.design methodologies. When
+          I&apos;m not immersed in pixels and prototypes, you can find me in the
+          great outdoors, seeking inspiration.
         </p>
       </div>
     </div>
