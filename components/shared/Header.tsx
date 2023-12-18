@@ -39,8 +39,8 @@ export default function Header() {
             src="/user.jpg"
             alt="Abdullahi Salihu"
             priority
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             className="border object-contain rounded-full grayscale"
           />
 

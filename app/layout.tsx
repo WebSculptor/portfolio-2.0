@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import TanstackProvider from "@/providers/TanstackProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +27,11 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <Header />
-        {children}
-        <Footer />
+        <TanstackProvider>
+          <Header />
+          {children}
+          <Footer />
+        </TanstackProvider>
       </body>
     </html>
   );

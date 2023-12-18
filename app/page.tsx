@@ -7,6 +7,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import Heading from "@/components/shared/Heading";
 import FAQsSection from "@/components/sections/FAQsSection";
 import Image from "next/image";
+import FeaturedSection from "@/components/sections/FeaturedSection";
 
 export default function Home() {
   return (
@@ -22,13 +23,15 @@ export default function Home() {
           className="-z-10 pointer-events-none select-none absolute inset-0 object-cover w-screen h-[calc(100vh-20%)]"
         />
         <MaxWidthContainer className="pt-10 md:pt-28 flex flex-col">
-          <div className="pt-10 md:pt-20 flex items-center flex-col justify-center gap-6">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold max-w-2xl text-center text-shadow">
-              Product Designer crafting visual solutions
+          <div className="pt-10 md:pt-20 flex items-center flex-col justify-center gap-4 md:gap-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl text-center text-shadow">
+              Developer Sculpting Exceptional Code Creations.
             </h1>
 
-            <p className="text-sm sm:text-lg italic text-center text-muted-foreground font-semibold">
-              Passionate about harnessing the power of design
+            <p className="text-sm sm:text-lg italic max-w-prose text-center text-muted-foreground font-semibold">
+              Developer with a passion for sculpting exceptional code creations
+              and transforming innovative ideas into seamless digital
+              experiences.
             </p>
 
             <div className="flex flex-col items-center mt-2 sm:mt-6">
@@ -44,7 +47,7 @@ export default function Home() {
           subtitle="I've worked on a lot of little projects over the years, but these are my favorites."
         />
 
-        <ProjectSection />
+        <FeaturedSection />
       </MaxWidthContainer>
 
       <MaxWidthContainer className="pt-16 md:pt-28 flex flex-col">
@@ -54,9 +57,9 @@ export default function Home() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
-          {[1, 2, 3].map((_, _key) => (
+          {/* {[1, 2, 3].map((_, _key) => (
             <ProjectCard key={_key} />
-          ))}
+          ))} */}
         </div>
       </MaxWidthContainer>
 

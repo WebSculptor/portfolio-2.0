@@ -8,7 +8,7 @@ import { removeLeadingSlash } from "@/lib/utils";
 
 export default function Hero({ title, description, showPath }: HeroTypes) {
   const pathname = usePathname();
-  const currentPath = removeLeadingSlash(pathname);
+  const currentPath = removeLeadingSlash(pathname as string);
 
   return (
     <div className="w-full py-10 md:py-20 bg-secondary border-b">
@@ -30,7 +30,7 @@ export default function Hero({ title, description, showPath }: HeroTypes) {
             Go Back
           </Link>
         )}
-        <div className="flex items-center justify-between flex-col gap-x-20 gap-y-5 lg:flex-row">
+        <div className="flex lg:items-center justify-between flex-col gap-x-20 gap-y-5 lg:flex-row">
           <h1
             dangerouslySetInnerHTML={{ __html: title }}
             className="w-full lg:max-w-xl text-2xl md:text-3xl lg:text-4xl font-black lg:leading-[45px]"

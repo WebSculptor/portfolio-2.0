@@ -1,8 +1,30 @@
+"use client";
+
 import ProjectCard from "@/components/cards/ProjectCard";
 import Hero from "@/components/shared/Hero";
+import { Skeleton } from "@/components/ui/skeleton";
 import MaxWidthContainer from "@/components/shared/MaxWidthContainer";
+import { client } from "@/sanity/lib/client";
+import { useQuery } from "@tanstack/react-query";
 
 export default function WorksPage() {
+  const { isPending, isError, data, error } = useQuery({
+    queryKey: ["projects"],
+    queryFn: async () => {
+      const sanityQuery = `*[_type == "projects"]{
+        _id,
+        "slug": slug.current,
+        projectBanner,
+        name,
+        description,
+      }`;
+
+      const data = await client.fetch(sanityQuery);
+
+      return data;
+    },
+  });
+
   return (
     <div className="w-full">
       <Hero
@@ -13,9 +35,17 @@ export default function WorksPage() {
 
       <MaxWidthContainer className="pt-16 md:pt-28">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((_, _key) => (
-            <ProjectCard key={_key} />
-          ))}
+          {isPending ? (
+            [1, 2, 3, 4, 5, 6].map((_, _key: number) => (
+              <Skeleton key={_key} className="aspect-[1.1] w-full rounded-lg" />
+            ))
+          ) : isError ? (
+            <span>Error: {error.message}</span>
+          ) : (
+            data?.map((project: ProjectCardProp) => (
+              <ProjectCard key={project._id} {...project} />
+            ))
+          )}
         </div>
       </MaxWidthContainer>
     </div>
