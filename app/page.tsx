@@ -8,6 +8,7 @@ import Heading from "@/components/shared/Heading";
 import FAQsSection from "@/components/sections/FAQsSection";
 import Image from "next/image";
 import FeaturedSection from "@/components/sections/FeaturedSection";
+import LatestSection from "@/components/sections/LatestSection";
 
 export default function Home() {
   return (
@@ -52,15 +53,11 @@ export default function Home() {
 
       <MaxWidthContainer className="pt-16 md:pt-28 flex flex-col">
         <Heading
-          title="Other Projects"
-          subtitle="Here are other projects I've built"
+          title="Latest Projects"
+          subtitle="Here are some of my latest projects"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
-          {/* {[1, 2, 3].map((_, _key) => (
-            <ProjectCard key={_key} />
-          ))} */}
-        </div>
+        <LatestSection />
       </MaxWidthContainer>
 
       <MaxWidthContainer className="pt-16 md:pt-28 flex flex-col">

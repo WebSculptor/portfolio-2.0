@@ -14,21 +14,23 @@ export default function AboutCard() {
         />
       </div>
 
-      <div className="flex flex-col pt-6 sm:p-6 lg:p-10 flex-1 space-y-2 lg:space-y-4">
-        <h2 className="text-xl">My design journey</h2>
+      <div className="flex flex-col pt-6 sm:p-6 lg:p-8 flex-1 space-y-3">
+        <h2 className="text-xl">My Coding Journey</h2>
         <p className="text-sm text-muted-foreground leading-loose">
-          My journey in the world of technology and product design has been an
-          exhilarating adventure. I specialize in crafting user-centered
-          experiences that not only look great but function flawlessly. I
-          believe in the power of collaboration and constant learning. I thrive
-          in multidisciplinary teams design methodologies. When I&apos;m not
-          immersed in pixels and prototypes, you can find me in the great
-          outdoors, seeking inspiration from nature and the world around me.
-          design methodologies. When I&apos;m not immersed in pixels and
-          prototypes, you can find me in the great outdoors, seeking inspiration
-          from nature and the world around me.design methodologies. When
-          I&apos;m not immersed in pixels and prototypes, you can find me in the
-          great outdoors, seeking inspiration.
+          My web development career has been focused on creating custom web
+          applications that empower businesses through innovative solutions. I
+          specialize in delivering excellence and tailored solutions and am
+          proficient in a wide range of technologies, including HTML, CSS,
+          JavaScript, ReactJS, NextJS, and others. My dedication goes beyond
+          traditional development to include services such as IT strategy
+          consulting and digital transformation.
+        </p>
+        <p className="text-sm text-muted-foreground leading-loose">
+          I stay up to date on business trends, embodying a commitment to
+          continuous learning and innovation, with the goal of improving
+          people's lives through intuitive and visually appealing software
+          solutions. Let's go on a journey together to turn your ideas into
+          digital realities that exceed your expectations.
         </p>
       </div>
     </div>

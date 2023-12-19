@@ -4,25 +4,13 @@ import ProjectCard from "@/components/cards/ProjectCard";
 import Hero from "@/components/shared/Hero";
 import { Skeleton } from "@/components/ui/skeleton";
 import MaxWidthContainer from "@/components/shared/MaxWidthContainer";
-import { client } from "@/sanity/lib/client";
 import { useQuery } from "@tanstack/react-query";
+import { fetchAllProjects } from "@/lib/actions";
 
 export default function WorksPage() {
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["projects"],
-    queryFn: async () => {
-      const sanityQuery = `*[_type == "projects"]{
-        _id,
-        "slug": slug.current,
-        projectBanner,
-        name,
-        description,
-      }`;
-
-      const data = await client.fetch(sanityQuery);
-
-      return data;
-    },
+    queryFn: fetchAllProjects,
   });
 
   return (

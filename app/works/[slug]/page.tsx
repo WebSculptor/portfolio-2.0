@@ -6,45 +6,19 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { client } from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
-
-const fetchProjectForProjectCard = (slug: string) => {
-  const data = client.fetch(
-    `*[_type == "projects" && slug.current == "gada-studios"][0]{
-  _id,
-    overview,
-    highlights,
-    url,
-    name,
-    banner,
-  changelog,
-    description
-}`
-  );
-
-  return data;
-};
+import { fetchProjectWithSlug } from "@/lib/actions";
 
 export default async function ProjectDetails({
   params,
 }: {
   params: { slug: string };
 }) {
-  const projects: ProjectDescriptionProp = await fetchProjectForProjectCard(
+  const projects: ProjectDescriptionProp = await fetchProjectWithSlug(
     params.slug
   );
 
-  const {
-    _id,
-    overview,
-    highlights,
-    url,
-    name,
-    banner,
-    changelog,
-    description,
-  } = projects;
-
-  // console.log(projects);
+  const { overview, highlights, url, name, banner, changelog, description } =
+    projects;
 
   return (
     <div className="w-full">
@@ -85,7 +59,7 @@ export default async function ProjectDetails({
                   Overview
                 </h2>
 
-                {overview.map((text, _key) => (
+                {overview?.map((text, _key) => (
                   <p
                     key={_key}
                     className="text-sm md:text-base text-muted-foreground"
@@ -107,15 +81,18 @@ export default async function ProjectDetails({
           </div>
 
           <div className="border border-l border-t-0 lg:border-l-0 lg:border-t p-4 lg:p-6 lg:max-w-sm w-full">
-            <div className="space-y-2 mb-6">
+            <div className="space-y-3 mb-6">
               <h2 className="text-base md:text-lg leading-none font-semibold">
                 Highlights
               </h2>
 
-              <ul className="list-item">
-                {highlights.map((highlight: string, _key: number) => (
-                  <li key={_key} className="text-sm md:text-base">
-                    - {highlight}
+              <ul className="list-item space-y-2">
+                {highlights?.map((highlight: string, _key: number) => (
+                  <li
+                    key={_key}
+                    className="text-sm md:text-base text-muted-foreground"
+                  >
+                    {highlight}
                   </li>
                 ))}
               </ul>

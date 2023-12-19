@@ -34,7 +34,10 @@ export default function Header() {
   return (
     <div className="w-full h-20 sm:h-[100px] bg-background/60 backdrop-blur-3xl z-20 sticky top-0 inset-x-0">
       <MaxWidthContainer className="flex items-center justify-between gap-x-6 h-full w-full">
-        <Link href="/" className="flex items-center space-x-2 pointer">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 pointer w-[156px]"
+        >
           <Image
             src="/user.jpg"
             alt="Abdullahi Salihu"
@@ -65,10 +68,13 @@ export default function Header() {
           ))}
         </div>
 
-        <p className="hidden md:flex items-center text-sm font-semibold pointer text-muted-foreground">
-          contact@gmail.com
+        <Link
+          href="tel:+2349120996480"
+          className="hidden md:flex items-center justify-end text-sm font-semibold pointer text-muted-foreground w-[156px]"
+        >
+          Let&apos;s talk
           <Copy className="w-3.5 h-3.5 ml-2" />
-        </p>
+        </Link>
 
         <MobileMenu />
       </MaxWidthContainer>

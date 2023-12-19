@@ -14,22 +14,21 @@ export function removeLeadingSlash(pathname: string): string | undefined {
   return pathname.substring(1);
 }
 
-// export function removeLeadingSlash(pathname: string): string | undefined {
-//   if (pathname === "/") {
-//     return undefined; // If pathname is only "/", return nothing
-//   }
+export function answerHasLink(answer: string): string {
+  // Regular expression to match URLs starting with 'https://'
+  const urlRegex = /https:\/\/\S+/;
 
-//   // Remove leading "/" and split the pathname into segments
-//   const segments = pathname.substring(1).split("/");
+  // Find the first URL in the text
+  const match = answer.match(urlRegex);
 
-//   // Replace special characters with spaces and capitalize each segment
-//   const formattedPath = segments
-//     .map((segment) => capitalize(segment.replace(/[^a-zA-Z0-9]/g, " ")))
-//     .join(" - ");
-
-//   return formattedPath;
-// }
-
-// function capitalize(str: string): string {
-//   return str.charAt(0).toUpperCase() + str.slice(1);
-// }
+  // If a URL is found, create an anchor tag and replace it in the text
+  if (match) {
+    const url = match[0];
+    const anchorTag = `<a href="${url}" target="_blank">${url}</a>`;
+    const newText = answer.replace(urlRegex, anchorTag);
+    return newText;
+  } else {
+    // If no URL is found, return the original text
+    return answer;
+  }
+}

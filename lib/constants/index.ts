@@ -4,7 +4,7 @@ export const faqs = [
   {
     question: "What technologies/languages do you specialize in?",
     answer:
-      "I specialize in full-stack development, with expertise in languages such as JavaScript (Node.js, React), Python (Django), and Java. I also have experience with database management using MySQL and MongoDB.",
+      "I specialize in front-end development, with expertise in languages such as JavaScript (Node.js, React, NextJs), Typescript, and Tailwind. I also have experience with database management using MongoDB, Sanity and Appwrite.",
   },
   {
     question: "Can you describe your development process?",
@@ -14,7 +14,7 @@ export const faqs = [
   {
     question: "What types of projects have you worked on?",
     answer:
-      "I've worked on a diverse range of projects, including e-commerce websites, content management systems, and mobile applications. Each project has allowed me to leverage different technologies and hone various aspects of my development skills.",
+      "I've worked on a diverse range of projects, including e-commerce websites and content management systems (CMS). Each project has allowed me to leverage different technologies and hone various aspects of my development skills.",
   },
   {
     question: "How do you stay updated with the latest industry trends?",
@@ -46,7 +46,7 @@ export const faqs = [
   {
     question: "What is your experience with collaborative development?",
     answer:
-      "I have extensive experience collaborating with cross-functional teams using tools like Slack and Jira. I actively participate in code reviews, provide constructive feedback, and appreciate the importance of effective communication in collaborative environments.",
+      "I have extensive experience collaborating with cross-functional teams using tools like Slack and Discord. I actively participate in code reviews, provide constructive feedback, and appreciate the importance of effective communication in collaborative environments.",
   },
   {
     question: "How do you ensure the security of the applications you develop?",

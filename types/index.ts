@@ -19,7 +19,7 @@ type ProjectDescriptionProp = {
   name: string;
   description: string;
   url: string;
-  overview: string[];
+  overview?: string[];
   highlights: string[];
   banner: any;
   changelog: string;
