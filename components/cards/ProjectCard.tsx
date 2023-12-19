@@ -10,12 +10,12 @@ export default function ProjectCard({
 }: ProjectCardProp) {
   return (
     <div className="sm:bg-secondary rounded-lg border group overflow-hidden">
-      <div className="w-full aspect-[1.6] border-b">
+      <div className="w-full aspect-[1.5] border-b">
         <Image
           src={urlForImage(projectBanner)}
           alt={name}
           width={666}
-          height={190}
+          height={200}
           quality={100}
           priority
           className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all"
