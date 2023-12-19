@@ -28,8 +28,8 @@ export default function AboutCard() {
         <p className="text-sm text-muted-foreground leading-loose">
           I stay up to date on business trends, embodying a commitment to
           continuous learning and innovation, with the goal of improving
-          people's lives through intuitive and visually appealing software
-          solutions. Let's go on a journey together to turn your ideas into
+          people&apos;s lives through intuitive and visually appealing software
+          solutions. Let&apos;s go on a journey together to turn your ideas into
           digital realities that exceed your expectations.
         </p>
       </div>
